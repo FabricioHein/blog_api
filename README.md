@@ -4,6 +4,8 @@ Ruby on Rails 6 course as API showing authentication via [devise_token_auth](htt
 
 This repository is part of the [Ruby on Rails 6 - Autenticação via API](https://www.youtube.com/watch?v=i6vul6MqylE&list=PLqsayW8DhUmsuvK17gwSI_rKbAlmxFIw5) on YouTube.
 
+
+
 <table>
   <tr>
     <td>Ruby version</td>

@@ -15,6 +15,18 @@ ActiveRecord::Schema.define(version: 2021_03_19_221533) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "SequelizeMeta", primary_key: "name", id: { type: :string, limit: 255 }, force: :cascade do |t|
+  end
+
+  create_table "Users", id: :serial, force: :cascade do |t|
+    t.string "name", limit: 255, null: false
+    t.string "email", limit: 255, null: false
+    t.string "password", limit: 255, null: false
+    t.datetime "createdAt", null: false
+    t.datetime "updatedAt", null: false
+    t.index ["email"], name: "Users_email_key", unique: true
+  end
+
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "body"
