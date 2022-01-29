@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.1'
 
+gem 'rake'
+gem 'rspec'
+gem 'kramdown'
+
 gem 'rails', '~> 6.1.2', '>= 6.1.2.1'
 gem 'puma', '~> 5.0'
 gem 'bootsnap', '>= 1.4.4', require: false

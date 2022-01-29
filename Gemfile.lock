@@ -90,6 +90,8 @@ GEM
     i18n (1.9.1)
       concurrent-ruby (~> 1.0)
     jsonapi-renderer (0.2.2)
+    kramdown (2.3.1)
+      rexml
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -151,6 +153,10 @@ GEM
       ffi (~> 1.0)
     regexp_parser (2.2.0)
     rexml (3.2.5)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
     rspec-core (3.10.2)
       rspec-support (~> 3.10.0)
     rspec-expectations (3.10.2)
@@ -217,11 +223,14 @@ DEPENDENCIES
   byebug
   factory_bot_rails (~> 6.1)
   faker (~> 2.15)
+  kramdown
   listen (~> 3.3)
   pg (~> 1.2)
   puma (~> 5.0)
   rack-cors (~> 1.1)
   rails (~> 6.1.2, >= 6.1.2.1)
+  rake
+  rspec
   rspec-rails (~> 4.0)
   rubocop
   shoulda-matchers (~> 4.5)
